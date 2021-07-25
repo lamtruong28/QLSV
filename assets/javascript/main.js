@@ -5,8 +5,6 @@ var stdApi = 'http://localhost:3000/dataSv';
 function start() {
     getDataSv(renderData);
     handleCreateSv();
-    var len = $$('.td');
-console.log([len])
 }
 
 start();
@@ -41,7 +39,7 @@ function renderData(dataList) {
     var htmls = dataList.map(function(dataSv) {
         return `
         <tr class = "sv-${dataSv.id}">
-            <td></td>
+            <td>${dataSv.id}</td>
             <td>${dataSv.mssv}</td>
             <td>${dataSv.name}</td>
             <td>${dataSv.gender}</td>
@@ -89,7 +87,7 @@ function handleDeleteSv(id) {
         method: 'DELETE',
         headers: {
             'Content-Type': 'application/json'
-          }
+          },
     }
 
     fetch(stdApi + '/' + id, options)
@@ -99,7 +97,7 @@ function handleDeleteSv(id) {
         .then(function() {
             var dataSv = $('.sv-' + id);
             if (dataSv) {
-                this.remove();
+                dataSv.remove();
             }
         });
 }
