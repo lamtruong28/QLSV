@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QLSV</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <h2>Danh sách sinh viên</h2>
+
+    <div class="content">
+        <div class="form-input">
+            <p>
+                <span for="">MSSV:</span>
+                <input type="text" name="mssv" placeholder="">
+            </p>
+            <p>
+                <span for="">Tên:</span>
+                <input type="text" name="name" placeholder="">
+            </p>
+            <p>
+                <span for="">Giới tính:</span>
+                <label for="boy">Nam</label>
+                <input id="boy" type="radio" checked value="Nam" name="gender" placeholder="">
+                <label for="girl">Nữ</label>
+                <input id="girl" type="radio" value="Nữ" name="gender" placeholder="">
+                <label for="differ">Khác</label>
+                <input id="differ" type="radio" value="Khác" name="gender" placeholder="">
+            </p>
+            <p>
+                <span for="">Lớp:</span>
+                <input type="text" name="class" placeholder="">
+            </p>
+            <p>
+                <span for="">SĐT:</span>
+                <input type="text" name="phone" placeholder="">
+            </p>
+            <p>
+                <span for="">Địa chỉ:</span>
+                <input type="text" name="address" placeholder="">
+            </p>
+            <button id="btn-create">Create</button>
+        </div>
+        <table class="sv-lists" border="1">
+            <thead>
+                <tr>
+                    <th>STT</th>
+                    <th>MSSV</th>
+                    <th>Họ & Tên</th>
+                    <th>Giới Tính</th>
+                    <th>Lớp</th>
+                    <th>SĐT</th>
+                    <th>Nơi Sinh</th>
+                    <!-- <th></th> -->
+                </tr>
+            </thead>
+            <tbody> 
+                <!-- <tr>
+                    <td>1</td>
+                    <td>20000294</td>
+                    <td>Trần Lâm Trường</td>
+                    <td>Nam</td>
+                    <td>20C1-LTM1</td>
+                    <td>0966007935</td>
+                    <td>QN</td>
+                </tr> -->
+            </tbody>
+        </table>
+    </div>
+
+
+
+
+
+
+    <script src="./assets/javascript/main.js"></script>
+</body>
+</html>

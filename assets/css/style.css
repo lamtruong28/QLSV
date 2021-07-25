@@ -1,0 +1,85 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+h2 {
+    text-align: center;
+    margin: 16px 0;
+}
+
+.content {
+    display: flex;
+    margin: 0 32px;
+
+}
+
+.form-input {
+    padding: 0 24px;
+}
+
+.form-input p {
+    margin-bottom: 8px;
+}
+
+.form-input span {
+    display: inline-block;
+    min-width: 60px;
+    vertical-align: bottom;
+}
+
+.form-input label {
+    margin-left: 8px;
+}
+
+.form-input input {
+    flex: 1;
+    padding: 8px;
+    font-size: 15px;
+}
+
+#btn-create {
+    float: right;
+    padding: 8px 20px;
+    border: none;
+    background-color: #000;
+    color: #fff;
+    border-radius: 4px;
+}
+
+#btn-create:hover {
+    background-color: #ccc;
+    color: #000;
+    transition: all linear .2s;
+    cursor: pointer;
+}
+
+.sv-lists {
+    flex: 1;
+    align-content: flex-end;
+    border-collapse: collapse;
+    height: fit-content;
+    text-align: center;
+}
+
+.sv-lists th,
+.sv-lists td {
+    padding: 8px;
+}
+
+.icondelete {
+    display: inline-block;
+    width: 14px;
+    vertical-align: middle;
+}
+
+.icondelete:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
